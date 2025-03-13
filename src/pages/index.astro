@@ -1,13 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import hoverSvg from "../assets/hover.svg"
+import cardSvg from "../assets/card.svg"
 ---
 
 <Layout>
-  <div
-    class="min-h-screen bg-black flex items-center justify-start relative overflow-hidden"
-  >
-    <div class="absolute top-0 left-0 w-[500px] h-[500px] transform rotate-180">
+  <div class="min-h-screen bg-black flex items-center relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-[600px] h-[600px] transform rotate-180">
       <img
         src={hoverSvg.src}
         alt=""
@@ -15,14 +14,24 @@ import hoverSvg from "../assets/hover.svg"
       />
     </div>
 
-    <div class="z-10 text-white p-16">
+    <div class="z-10 text-white pl-24">
       <h1 class="text-6xl font-bold mb-0 tracking-tight">Spotify</h1>
-      <h2 class="text-[8rem] leading-[1] font-extrabold tracking-tighter">
-        Wrapped<br />2024
+      <h2
+        class="text-[8rem] leading-[1] font-extrabold tracking-tighter whitespace-nowrap"
+      >
+        Wrapped 2024
       </h2>
     </div>
 
-    <div class="absolute bottom-0 right-0 w-[500px] h-[500px]">
+    <div class="absolute top-8 right-8 z-20">
+      <img
+        src={cardSvg.src}
+        alt="Spotify Wrapped Card"
+        class="w-[500px] h-auto"
+      />
+    </div>
+
+    <div class="absolute bottom-0 right-0 w-[600px] h-[600px]">
       <img
         src={hoverSvg.src}
         alt=""
