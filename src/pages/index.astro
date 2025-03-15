@@ -5,38 +5,48 @@ import cardSvg from "../assets/card.svg"
 ---
 
 <Layout>
-  <div class="min-h-screen bg-black flex items-center relative overflow-hidden">
-    <div class="absolute top-0 left-0 w-[600px] h-[600px] transform rotate-180">
-      <img
-        src={hoverSvg.src}
-        alt=""
-        class="w-full h-full object-cover opacity-90"
-      />
+  <div class="min-h-screen bg-black relative overflow-hidden">
+    {/* Efectos de fondo */}
+    <div
+      class="absolute top-0 left-0 w-[300px] sm:w-[400px] lg:w-[600px] h-[300px] sm:h-[400px] lg:h-[600px] transform rotate-180 opacity-60"
+    >
+      <img src={hoverSvg.src} alt="" class="w-full h-full object-cover" />
     </div>
 
-    <div class="z-10 text-white pl-24">
-      <h1 class="text-6xl font-bold mb-0 tracking-tight">Spotify</h1>
-      <h2
-        class="text-[8rem] leading-[1] font-extrabold tracking-tighter whitespace-nowrap"
+    <div
+      class="absolute bottom-0 right-0 w-[300px] sm:w-[400px] lg:w-[600px] h-[300px] sm:h-[400px] lg:h-[600px] opacity-60"
+    >
+      <img src={hoverSvg.src} alt="" class="w-full h-full object-cover" />
+    </div>
+
+    {/* Contenido principal */}
+    <div
+      class="relative z-10 min-h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-between px-6 sm:px-12 lg:px-24"
+    >
+      {/* Texto */}
+      <div class="text-white text-center lg:text-left mb-8 lg:mb-0">
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-2 tracking-tight"
+        >
+          Spotify
+        </h1>
+        <h2
+          class="text-5xl sm:text-6xl lg:text-7xl xl:text-[8rem] leading-[0.9] font-extrabold tracking-tighter"
+        >
+          Wrapped 2024
+        </h2>
+      </div>
+
+      {/* Tarjeta */}
+      <div
+        class="w-[280px] sm:w-[350px] lg:w-[450px] xl:w-[500px] transform lg:translate-x-[-2rem] transition-transform hover:scale-105"
       >
-        Wrapped 2024
-      </h2>
-    </div>
-
-    <div class="absolute top-8 right-8 z-20">
-      <img
-        src={cardSvg.src}
-        alt="Spotify Wrapped Card"
-        class="w-[500px] h-auto"
-      />
-    </div>
-
-    <div class="absolute bottom-0 right-0 w-[600px] h-[600px]">
-      <img
-        src={hoverSvg.src}
-        alt=""
-        class="w-full h-full object-cover opacity-90"
-      />
+        <img
+          src={cardSvg.src}
+          alt="Spotify Wrapped Card"
+          class="w-full h-auto rounded-2xl shadow-2xl"
+        />
+      </div>
     </div>
   </div>
 </Layout>
