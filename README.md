@@ -1,48 +1,83 @@
-# Astro Starter Kit: Basics
+# Spotify Wrapped 2024 Clone
 
-```sh
-pnpm create astro@latest -- --template basics
+![Spotify Wrapped Preview](public/image.png)
+
+A beautiful clone of Spotify Wrapped 2024 landing page built with Astro and Tailwind CSS 4. Check out the [live demo](https://astro-spotify-wrapped.vercel.app/).
+
+## 🚀 Features
+
+- Built with Astro and TailwindCSS 4
+- Fully responsive design
+- Beautiful gradient animations
+- Optimized for performance
+- TypeScript support
+
+## 🛠️ Tech Stack
+
+- [Astro](https://astro.build)
+- [TailwindCSS](https://tailwindcss.com)
+- [TypeScript](https://www.typescriptlang.org)
+
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js 18 or higher
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/anibalalpizar/astro-spotify-wrapped.git
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+2. Navigate to the project directory:
+```bash
+cd astro-spotify-wrapped
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+3. Install dependencies:
+```bash
+pnpm install
+```
 
-## 🧞 Commands
+4. Start the development server:
+```bash
+pnpm dev
+```
 
-All commands are run from the root of the project, from a terminal:
+The site will be available at `http://localhost:4321`
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+## 🏗️ Building for Production
 
-## 👀 Want to learn more?
+To create a production build:
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+pnpm build
+```
+
+To preview the production build:
+
+```bash
+pnpm preview
+```
+
+## 🎨 Design Credits
+
+This project is based on the Figma design by [@massliharf](https://www.figma.com/@massliharf).
+- [Original Figma Design](https://www.figma.com/community/file/1446229242828191725)
+
+## 📄 License
+
+### Code License
+This project is licensed under the [MIT License](LICENSE).
+
+### Design License
+The design is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
+
+## 🙏 Acknowledgments
+
+- Design by [@massliharf](https://www.figma.com/@massliharf)
+- Built with [Astro](https://astro.build)
+- Styled with [TailwindCSS](https://tailwindcss.com)
